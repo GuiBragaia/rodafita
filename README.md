@@ -4,6 +4,8 @@
 
 Uma aplicação web moderna e elegante que recomenda filmes entre os 200 melhores da história do cinema. Com interface cinematográfica, sistema de favoritos e recomendações inteligentes.
 
+🌐 **Acesse em:** [https://rodafita.vercel.app](https://rodafita.vercel.app)
+
 [![Next.js](https://img.shields.io/badge/Next.js-15.2.4-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.9-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
@@ -93,7 +95,7 @@ Uma aplicação web moderna e elegante que recomenda filmes entre os 200 melhore
 
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/seu-usuario/roda-a-fita.git
+   git clone https://github.com/GuiBragaia/roda-a-fita.git
    cd roda-a-fita
    ```
 
@@ -219,7 +221,7 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 ## 👨‍💻 Autor
 
-**Seu Nome** - [@seu-usuario](https://github.com/seu-usuario)
+**Guilherme Bragaia** - [@GuiBragaia](https://github.com/GuiBragaia)
 
 ## 🙏 Agradecimentos
 

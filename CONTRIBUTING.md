@@ -9,7 +9,7 @@ Obrigado por considerar contribuir com o **Roda a Fita**! Este documento fornece
 1. Faça um fork do repositório
 2. Clone seu fork localmente:
    ```bash
-   git clone https://github.com/seu-usuario/roda-a-fita.git
+   git clone https://github.com/GuiBragaia/roda-a-fita.git
    cd roda-a-fita
    ```
 
