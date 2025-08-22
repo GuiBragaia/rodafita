@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Gradiente de fundo -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="filmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="highlightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fundo circular com gradiente -->
+  <circle cx="32" cy="32" r="30" fill="url(#bgGradient)" stroke="#3b82f6" stroke-width="3"/>
+  
+  <!-- Rolo de filme - círculo central -->
+  <circle cx="32" cy="32" r="18" fill="url(#filmGradient)" stroke="#1e40af" stroke-width="2"/>
+  
+  <!-- Furos do rolo de filme - principais -->
+  <circle cx="32" cy="14" r="2.5" fill="#1e293b"/>
+  <circle cx="32" cy="50" r="2.5" fill="#1e293b"/>
+  <circle cx="14" cy="32" r="2.5" fill="#1e293b"/>
+  <circle cx="50" cy="32" r="2.5" fill="#1e293b"/>
+  
+  <!-- Furos diagonais -->
+  <circle cx="20" cy="20" r="2.5" fill="#1e293b"/>
+  <circle cx="44" cy="44" r="2.5" fill="#1e293b"/>
+  <circle cx="20" cy="44" r="2.5" fill="#1e293b"/>
+  <circle cx="44" cy="20" r="2.5" fill="#1e293b"/>
+  
+  <!-- Destaque central -->
+  <circle cx="32" cy="32" r="6" fill="url(#highlightGradient)"/>
+  
+  <!-- Pequeno brilho no centro -->
+  <circle cx="30" cy="30" r="2" fill="#ffffff" opacity="0.8"/>
+</svg>

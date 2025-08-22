@@ -1,0 +1,41 @@
+{
+  "name": "Roda a Fita - Recomendações de Filmes",
+  "short_name": "Roda a Fita",
+  "description": "Descubra sua próxima obra-prima cinematográfica entre os melhores filmes da história",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "pt-BR",
+  "categories": ["entertainment", "lifestyle", "utilities"],
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Descobrir Filme",
+      "short_name": "Descobrir",
+      "description": "Descobrir um novo filme incrível",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

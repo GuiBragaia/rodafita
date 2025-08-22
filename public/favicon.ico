@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Fundo circular -->
+  <circle cx="16" cy="16" r="15" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  
+  <!-- Rolo de filme - círculo central -->
+  <circle cx="16" cy="16" r="8" fill="#3b82f6" stroke="#1e40af" stroke-width="1"/>
+  
+  <!-- Furos do rolo de filme -->
+  <circle cx="16" cy="8" r="1.5" fill="#1e293b"/>
+  <circle cx="16" cy="24" r="1.5" fill="#1e293b"/>
+  <circle cx="8" cy="16" r="1.5" fill="#1e293b"/>
+  <circle cx="24" cy="16" r="1.5" fill="#1e293b"/>
+  
+  <!-- Furos diagonais -->
+  <circle cx="11" cy="11" r="1.5" fill="#1e293b"/>
+  <circle cx="21" cy="21" r="1.5" fill="#1e293b"/>
+  <circle cx="11" cy="21" r="1.5" fill="#1e293b"/>
+  <circle cx="21" cy="11" r="1.5" fill="#1e293b"/>
+  
+  <!-- Pequeno destaque no centro -->
+  <circle cx="16" cy="16" r="2" fill="#60a5fa"/>
+</svg>
