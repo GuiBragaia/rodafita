@@ -1,17 +1,25 @@
-# 🎬 Roda a Fita - Recomendações de Filmes
+# 🎬 Roda a Fita
 
-Uma aplicação moderna e elegante para descobrir sua próxima obra-prima cinematográfica entre os 200 melhores filmes da história.
+> **Descubra sua próxima obra-prima cinematográfica**
+
+Uma aplicação web moderna e elegante que recomenda filmes entre os 200 melhores da história do cinema. Com interface cinematográfica, sistema de favoritos e recomendações inteligentes.
+
+[![Next.js](https://img.shields.io/badge/Next.js-15.2.4-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.9-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=flat-square&logo=shadcnui)](https://ui.shadcn.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 ## ✨ Características
 
-### 🎨 Design Ultra-Moderno
-- **Interface cinematográfica** com gradientes dinâmicos e efeitos de vidro (glass morphism)
+### 🎨 Design Moderno
+- **Interface cinematográfica** com glass morphism e gradientes dinâmicos
 - **Animações fluidas** e transições suaves em toda a aplicação
 - **Paleta de cores vibrante** com tons de rosa e roxo cinematográficos
 - **Partículas animadas** em tempo real para maior imersão
 - **Responsivo** e otimizado para todos os dispositivos
 
-### 🚀 Funcionalidades Avançadas
+### 🚀 Funcionalidades
 - **Sistema de recomendações inteligente** com filtros por gênero
 - **Favoritos persistentes** salvos localmente
 - **Compartilhamento nativo** via API Web Share ou clipboard
@@ -24,23 +32,21 @@ Uma aplicação moderna e elegante para descobrir sua próxima obra-prima cinema
 - **Feedback visual imediato** para todas as ações
 - **Navegação intuitiva** com elementos interativos
 - **Acessibilidade** com foco em UX inclusiva
-- **Performance otimizada** com lazy loading e animações eficientes
+- **Performance otimizada** com lazy loading
 
-## 🛠️ Tecnologias
+## 🛠️ Stack Tecnológica
 
-- **Next.js 14** - Framework React com App Router
-- **TypeScript** - Tipagem estática para maior confiabilidade
-- **Tailwind CSS** - Framework CSS utilitário
-- **Lucide React** - Ícones modernos e consistentes
-- **Framer Motion** - Animações avançadas (preparado para integração)
-- **OKLCH Colors** - Sistema de cores moderno e acessível
+### Frontend
+- **[Next.js 15](https://nextjs.org/)** - Framework React com App Router
+- **[TypeScript](https://www.typescriptlang.org/)** - Tipagem estática
+- **[Tailwind CSS 4](https://tailwindcss.com/)** - Framework CSS utilitário
+- **[shadcn/ui](https://ui.shadcn.com/)** - Componentes de UI reutilizáveis
+- **[Radix UI](https://www.radix-ui.com/)** - Componentes acessíveis
+- **[Lucide React](https://lucide.dev/)** - Ícones modernos
 
-## 🎨 Componentes Visuais
-
-### Sistema de Design
+### UI/UX
 - **Glass Morphism** - Efeitos de vidro translúcido
 - **Gradientes Dinâmicos** - Cores que se movem e respiram
-- **Sombras Profundas** - Profundidade e dimensão
 - **Animações CSS** - Transições suaves e naturais
 - **Partículas Interativas** - Elementos flutuantes em tempo real
 
@@ -55,8 +61,9 @@ Uma aplicação moderna e elegante para descobrir sua próxima obra-prima cinema
 ### 🎲 Descoberta de Filmes
 - Clique no botão mágico para receber uma recomendação
 - Filtros por gênero cinematográfico
-- Seleção aleatória inteligente
+- Seleção aleatória inteligente com sistema de pesos
 - Informações detalhadas de cada filme
+- Integração com TMDB para posters e dados adicionais
 
 ### ❤️ Sistema de Favoritos
 - Adicione filmes à sua lista pessoal
@@ -77,6 +84,12 @@ Uma aplicação moderna e elegante para descobrir sua próxima obra-prima cinema
 - Suporte a preferências do sistema
 
 ## 🚀 Como Executar
+
+### Pré-requisitos
+- Node.js 18+ 
+- pnpm (recomendado) ou npm
+
+### Instalação
 
 1. **Clone o repositório**
    ```bash
@@ -99,44 +112,41 @@ Uma aplicação moderna e elegante para descobrir sua próxima obra-prima cinema
    http://localhost:3000
    ```
 
-## 📦 Scripts Disponíveis
+### Scripts Disponíveis
 
-- `pnpm dev` - Servidor de desenvolvimento
-- `pnpm build` - Build de produção
-- `pnpm start` - Servidor de produção
-- `pnpm lint` - Verificação de código
+| Comando | Descrição |
+|---------|-----------|
+| `pnpm dev` | Servidor de desenvolvimento |
+| `pnpm build` | Build de produção |
+| `pnpm start` | Servidor de produção |
+| `pnpm lint` | Verificação de código |
 
-## 🎯 Melhorias Implementadas
+## 📦 Estrutura do Projeto
 
-### Visual e UX
-- ✅ Design completamente renovado com glass morphism
-- ✅ Animações fluidas e transições suaves
-- ✅ Sistema de partículas interativas
-- ✅ Paleta de cores cinematográfica moderna
-- ✅ Componentes de loading elegantes
-- ✅ Sistema de notificações toast personalizado
+```
+roda-a-fita/
+├── app/                    # App Router (Next.js 15)
+│   ├── globals.css        # Estilos globais
+│   ├── layout.tsx         # Layout principal
+│   └── page.tsx           # Página inicial
+├── components/            # Componentes React
+│   ├── ui/               # Componentes de UI
+│   └── theme-provider.tsx # Provedor de tema
+├── data/                 # Dados estáticos
+│   └── movies.json       # Base de dados de filmes
+├── hooks/                # Custom hooks
+├── lib/                  # Utilitários
+└── public/               # Assets estáticos
+```
 
-### Funcionalidades
-- ✅ Feedback visual para todas as ações
-- ✅ Sistema de favoritos com notificações
-- ✅ Compartilhamento aprimorado com feedback
-- ✅ PWA configurado e otimizado
-- ✅ SEO e meta tags otimizadas
-- ✅ Acessibilidade melhorada
+## 🎨 Componentes Principais
 
-### Performance
-- ✅ Animações otimizadas com CSS
-- ✅ Lazy loading de imagens
-- ✅ Transições eficientes
-- ✅ Código TypeScript tipado
-- ✅ Componentes reutilizáveis
-
-## 🎨 Componentes Criados
-
-- `Particles` - Sistema de partículas animadas
-- `LoadingSpinner` - Spinners de carregamento elegantes
-- `CustomToast` - Sistema de notificações toast
-- `useToast` - Hook para gerenciar notificações
+- **`Particles`** - Sistema de partículas animadas
+- **`LoadingSpinner`** - Spinners de carregamento elegantes
+- **`CustomToast`** - Sistema de notificações toast
+- **`TrailerModal`** - Modal para trailers
+- **`WhereToWatch`** - Informações de onde assistir
+- **`MovieStats`** - Estatísticas do filme
 
 ## 📱 PWA Features
 
@@ -146,8 +156,34 @@ Uma aplicação moderna e elegante para descobrir sua próxima obra-prima cinema
 - Modo standalone
 - Shortcuts configurados
 
-## 🔮 Próximas Melhorias
+## 🎯 Melhorias Implementadas
 
+### ✅ Visual e UX
+- Design completamente renovado com glass morphism
+- Animações fluidas e transições suaves
+- Sistema de partículas interativas
+- Paleta de cores cinematográfica moderna
+- Componentes de loading elegantes
+- Sistema de notificações toast personalizado
+
+### ✅ Funcionalidades
+- Feedback visual para todas as ações
+- Sistema de favoritos com notificações
+- Compartilhamento aprimorado com feedback
+- PWA configurado e otimizado
+- SEO e meta tags otimizadas
+- Acessibilidade melhorada
+
+### ✅ Performance
+- Animações otimizadas com CSS
+- Lazy loading de imagens
+- Transições eficientes
+- Código TypeScript tipado
+- Componentes reutilizáveis
+
+## 🔮 Roadmap
+
+### Próximas Funcionalidades
 - [ ] Integração com Framer Motion para animações mais avançadas
 - [ ] Sistema de avaliações de usuários
 - [ ] Recomendações baseadas em histórico
@@ -155,14 +191,46 @@ Uma aplicação moderna e elegante para descobrir sua próxima obra-prima cinema
 - [ ] Integração com APIs de streaming
 - [ ] Sistema de playlists personalizadas
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+### Melhorias Técnicas
+- [ ] Testes automatizados
+- [ ] CI/CD pipeline
+- [ ] Otimização de performance
+- [ ] Internacionalização (i18n)
 
 ## 🤝 Contribuição
 
-Contribuições são bem-vindas! Por favor, leia as [diretrizes de contribuição](CONTRIBUTING.md) antes de submeter um pull request.
+Contribuições são bem-vindas! Por favor, siga estas diretrizes:
+
+1. Fork o projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+### Diretrizes de Código
+- Use TypeScript para todo novo código
+- Siga as convenções do ESLint
+- Mantenha a acessibilidade em mente
+- Teste suas mudanças antes de submeter
+
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+## 👨‍💻 Autor
+
+**Seu Nome** - [@seu-usuario](https://github.com/seu-usuario)
+
+## 🙏 Agradecimentos
+
+- [TMDB](https://www.themoviedb.org/) - API de dados de filmes
+- [shadcn/ui](https://ui.shadcn.com/) - Componentes de UI reutilizáveis
+- [Radix UI](https://www.radix-ui.com/) - Componentes acessíveis
+- [Lucide](https://lucide.dev/) - Ícones modernos
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS
 
 ---
 
 **Desenvolvido com ❤️ e 🎬 para os amantes de cinema**
+
+[⬆ Voltar ao topo](#-roda-a-fita)
